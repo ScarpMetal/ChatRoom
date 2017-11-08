@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div id=master>
+    @await Html.PartialAsync("Sidebar")
+    <div id=messageMaster>
+        <h1 id=roomHeader>Global</h1>
+        <div class=accentLine></div>
+        <div id=messageArea>
+            <!--<div class=message><span class=timestamp>23:32</span> <span style="color:#9397fb" class=username>(Matt)</span> Hello</div>
+            <div class=message><span class=timestamp>23:32</span> <span style="color:#9397fb" class=username>(Matt)</span> Anyone up?</div>
+            <div class=message><span class=timestamp>23:34</span> <span style="color:#fb9393" class=username>(Jesse)</span> Yo</div>
+            <div class=message><span class=timestamp>23:37</span> <span style="color:#9397fb" class=username>(Matt)</span> Sup Jesse</div>
+            <div class=message><span class=timestamp>23:38</span> <span style="color:#fb9393" class=username>(Jesse)</span> The sky...</div>
+            <div class=message><span class=timestamp>23:40</span> <span style="color:#9397fb" class=username>(Matt)</span> (☞ﾟヮﾟ)☞ </div>
+            <div class=message><span class=timestamp>23:40</span> <span style="color:#fb9393" class=username>(Jesse)</span> ☜(ﾟヮﾟ☜) </div>
+            <div class=message><span class=timestamp>23:43</span> <span style="color:#fa8ef5" class=username>(Sara)</span> You guys are idiots </div> -->
+        </div>
+        <div style="display:flex; height:30px; line-height:30px;">
+            <input type=text id=messageInput style="flex:8;">
+            <div id=sendBtn style="flex:1;">Send</div>
+        </div>
+    </div>
+</div>

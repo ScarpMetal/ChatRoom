@@ -1,0 +1,233 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+html, body{
+	margin: 0px;
+	height: 100%;
+	background-color:#f5f5f5;
+	font-family:Verdana, Geneva, sans-serif;
+	overflow:hidden;
+}
+
+div{
+
+}
+
+#master{
+	display:flex;
+	width:1000px;
+	position:absolute;
+  	height:auto;
+  	bottom:0;
+  	top:0;
+  	left:0;
+  	right:0;
+	margin:10px auto 10px auto;
+	min-height:200px;
+}
+
+/* Sidebar */
+#sidebar{
+	display: flex;
+	flex-direction: column;
+	width: 250px;
+	background-color:#e0e0e0;
+	text-align:center;
+}
+
+#sidebar > div{
+	height:50px;
+	cursor:pointer;
+	line-height:50px;
+}
+
+#roomsList{
+	flex:1;
+	overflow-y:auto;
+	margin:5px;
+}
+
+.room{
+	height:50px;
+	margin:4px;
+	background-color:#eaeaea;
+}
+
+.roomName{
+    font-size:14px;
+	margin-top:-2px;
+}
+
+/* Message Master */
+#messageMaster{
+	display:flex;
+	flex-direction:column;
+	flex:1;
+	margin-left:10px;
+	background-color:#ececec;
+}
+
+#messageArea{
+	display:flex;
+	flex-direction:column;
+	/*justify-content:flex-end;*/
+	flex:1;
+	padding:10px;
+	background-color:#e3e3e3;
+	text-align:left;
+	font-weight:initial;
+    overflow-y:auto;
+}
+
+#messageArea > :first-child {
+    margin-top: auto !important;
+}
+
+
+#messageInput{
+	background-color:#eaeaea;
+	border:solid 2px grey;
+	padding:0 5px;
+	height:26px;
+	line-height:26px;
+	outline:none;
+	font-size:14px;
+}
+
+#roomHeader{
+	margin:4px 8px 8px 8px;
+	text-align:center;
+}
+
+#sendBtn{
+	border-style: solid;
+	border-color: grey;
+    border-width: 2px 2px 2px 0;
+	height:26px;
+	line-height:26px;
+	cursor:pointer;
+	text-align:center;
+}
+
+.accentLine{
+	height:5px;
+	background-color:#8bacbd;
+}
+
+.message{
+	margin:5px 0 5px 0;
+}
+
+.timestamp{
+	font-size: 12px;
+	color: grey;
+}
+
+.username{
+	font-weight: bold;
+}
+
+.bot{
+    margin:5px 0;
+    font-style:italic;
+    color:grey;
+    text-align:center;
+}
+
+/* Popups */
+.myBtn{
+	border: solid 2px grey;
+	height:26px;
+	line-height:22px;
+	cursor:pointer;
+	text-align:center;
+}
+.popup{
+	position:absolute;
+	box-shadow: 2px 2px 1px #888888;
+	background-color: #ececec;
+	text-align:center;
+    padding:10px;
+    width:200px;
+    top:30%;
+    left:50%;
+    margin-left:-100px;
+}
+#createRoomDiv{
+	display:none;
+	height:120px;
+}
+#createRoomCancel{
+	position:absolute;
+	margin-left:185px;
+	margin-top:-65px;
+	cursor:pointer;
+}
+
+#loginDiv{
+    display:none;
+	height:160px;
+}
+#passwordInput{
+	margin:5px;
+}
+#loginErrorMsg{
+	display:none;
+	position:absolute;
+	font-size:10px;
+	color:red;
+}
+#logOutBtn{
+	position:absolute;
+	margin:5px;
+	font-size:12px;
+	color:grey;
+	cursor:pointer;
+	right:0;
+}
+/* Notification Things */
+#notifyDiv{
+	position:absolute;
+	margin-top:10px;
+	margin-left:270px;
+}
+#notifyDot{
+    display:none;
+	position:absolute;
+	margin-left:-12px;
+	margin-top:6px;
+	height:8px;
+	width:8px;
+	background-color:red;
+	border-radius:4px;
+}
+.notifyItem{
+	border:solid 1px grey;
+	height:30px;
+	width:200px;
+	margin-top:3px;
+	background-color:#ececec;
+	font-size:10px;
+	line-height:15px;
+	padding:0 5px;
+	cursor:pointer;
+}
+img {
+	cursor:pointer;
+}
+#notifyList{
+	display:none;
+}
+#notifyBtn{
+	height:46px;
+	width:200px;
+}
